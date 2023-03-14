@@ -1,0 +1,82 @@
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {  
+    text-align: center;
+    font-family: "calibri";
+}
+
+footer {
+    text-shadow: 20px;
+    background-color: #444;
+    font-size: 15px;
+}    
+
+header {
+    background: rgba(49, 115, 214, 0.6);
+    width: 100%;
+    clear:both ;
+    content: '';
+    display: table;
+}
+
+img{
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    border-radius: 40px;
+  }
+
+#logomenu {
+    width: 100px;
+    height: 50px;
+}
+
+#mifoto {
+    width: 140px;
+    height: 190px;
+}
+
+
+.menu {
+    width: 900px; 
+    margin: 0 auto;
+    display: flex;*/
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 15px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: 0.7s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
